@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+/* ===============================
+   DEFAULT REACT STYLES
+================================ */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===============================
+   NAVBAR & DROPDOWN
+================================ */
+
+.dropdown-menu-center {
+  right: auto;
+  left: 50%;
+  transform: translate(-40%, 0);
+}
+
+.myHover:hover {
+  background-color: rgb(51, 97, 211);
+  border-radius: 25px;
+}
+
+/* ===============================
+   PRODUCT CARD FIX (IMPORTANT)
+================================ */
+
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  height: 200px;          /* FIX IMAGE HEIGHT */
+  width: 100%;
+  object-fit: cover;      /* PREVENT IMAGE STRETCH */
+}
+
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .card-title {
+  min-height: 48px;       /* SAME HEIGHT TITLES */
+}
+
+/* BUTTON STAYS AT BOTTOM */
+.product-card button {
+  margin-top: auto;
+}
+
+/* OPTIONAL HOVER EFFECT */
+.product-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+.card {
+  border-radius: 10px;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Force all cards to same height */
+.product-card {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image wrapper fixes size issue */
+.product-image-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+/* Image always same size */
+.product-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fix title height */
+.card-title {
+  min-height: 40px;
+}
